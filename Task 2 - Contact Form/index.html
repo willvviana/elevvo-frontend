@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="page__header">
+      <h1>Contact Us</h1>
+      <p>We usually reply within one business day.</p>
+    </header>
+
+    <!--
+      novalidate disables the browser's native validation UI.
+      We want our own messages. Native UI is inconsistent across browsers.
+    -->
+    <form class="form" id="contactForm" novalidate>
+      <div class="form__row">
+        <!-- Each field is a self-contained block: label, input, error -->
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            aria-describedby="name-error"
+          />
+          <!-- role="alert" so screen readers announce the error when it appears -->
+          <p class="field__error" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            aria-describedby="email-error"
+          />
+          <p class="field__error" id="email-error" role="alert"></p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          aria-describedby="subject-error"
+        />
+        <p class="field__error" id="subject-error" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          minlength="10"
+          aria-describedby="message-error"
+        ></textarea>
+        <p class="field__error" id="message-error" role="alert"></p>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Success panel. Hidden by default. Shown after valid submit. -->
+    <div class="success" id="success" hidden>
+      <h2>Message sent</h2>
+      <p>Thanks. We'll get back to you soon.</p>
+      <button type="button" class="btn btn--ghost" id="resetBtn">Send another</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

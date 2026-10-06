@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collapsible Sidebar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--
+    data-sidebar="open" lives on <body>. Why?
+    - One source of truth for state.
+    - CSS can react to it from anywhere without classes scattered across nodes.
+    - JS only flips ONE attribute.
+  -->
+  <body data-sidebar="open">
+
+    <!-- Toggle button. Placed outside <aside> so it stays visible when sidebar is closed. -->
+    <button
+      id="sidebarToggle"
+      class="toggle-btn"
+      type="button"
+      aria-controls="sidebar"
+      aria-expanded="true"
+      aria-label="Toggle sidebar"
+    >
+      <!-- Icon swapped via CSS based on state; no JS text manipulation needed -->
+      <span class="toggle-icon" aria-hidden="true"></span>
+    </button>
+
+    <aside id="sidebar" class="sidebar" aria-label="Main navigation">
+      <!-- Logo placeholder -->
+      <div class="sidebar__logo">
+        <span class="sidebar__logo-mark" aria-hidden="true">◆</span>
+        <span class="sidebar__logo-text">Brand</span>
+      </div>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__list">
+          <li>
+            <a href="#" class="sidebar__link">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l9-9 9 9v9a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2z"/></svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/></svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22a8 8 0 0 1 16 0z"/></svg>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+              <span>Favorites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__link">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.5-2.4 1a7 7 0 0 0-1.7-1L14.5 3h-4l-.3 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.5L6 11a7 7 0 0 0 0 2l-2 1.5 2 3.5 2.4-1a7 7 0 0 0 1.7 1l.3 2.5h4l.3-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.5-2-1.5c.1-.3.1-.7.1-1z"/></svg>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Demo content so you can SEE the push behavior on desktop -->
+    <main class="content">
+      <h1>Content Area</h1>
+      <p>On desktop, the sidebar pushes this content. On mobile, it overlays.</p>
+    </main>
+
+    <!-- Mobile backdrop. Closes sidebar on click. Hidden on desktop. -->
+    <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

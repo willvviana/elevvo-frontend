@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes & Nonsense — A personal blog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header__brand">Notes &amp; Nonsense</a>
+      <p class="header__tagline">Things I think about, written down.</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ============ FILTERS ============ -->
+    <section class="filters" aria-label="Filter posts">
+      <!-- Search input -->
+      <div class="filters__search">
+        <label for="search" class="sr-only">Search posts by title</label>
+        <input
+          type="search"
+          id="search"
+          placeholder="Search by title…"
+          autocomplete="off"
+        />
+      </div>
+
+      <!-- Category buttons. Rendered by JS from the CATEGORIES array. -->
+      <div class="filters__cats" id="categoryFilters" role="tablist" aria-label="Categories"></div>
+    </section>
+
+    <!-- ============ POST GRID ============ -->
+    <section class="posts" aria-label="Blog posts">
+      <!-- JS renders cards here -->
+      <div class="posts__grid" id="postsGrid"></div>
+
+      <!-- Empty state. Shown only when no posts match the filters. -->
+      <p class="posts__empty" id="emptyState" hidden>
+        No posts match your filters.
+      </p>
+    </section>
+
+    <!-- ============ PAGINATION ============ -->
+    <!-- Rendered by JS. Hidden when only one page exists. -->
+    <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Notes &amp; Nonsense. Built by hand.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
