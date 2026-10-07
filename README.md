@@ -1,243 +1,355 @@
-# 🌿 Terrarium — Frontend E-commerce Project
+# Elevvo Frontend Projects
 
-A responsive frontend project for a fictional terrarium store, designed to showcase modern web development fundamentals, user interface design, and interactive e-commerce features.
+A collection of frontend development projects completed as part of my **Full-Stack Engineering Internship at Elevvo**.
 
-🔗 **Live Demo:** https://willvviana.github.io/terrarium-frontend/
+The repository contains a series of frontend tasks designed to strengthen practical skills in web development, user interface implementation, responsive design, JavaScript, and building functional browser-based applications.
 
----
+🔗 **Live Demo:** https://willvviana.github.io/elevvo-frontend/
 
-## 📖 About the Project
-
-**Terrarium** is a frontend e-commerce experience for a fictional business specializing in handcrafted terrariums and miniature ecosystems.
-
-The project was built to practice and demonstrate frontend development concepts such as:
-
-* Responsive web design
-* Component-based UI development
-* Product presentation
-* Shopping cart interactions
-* Navigation between page sections
-* Form handling
-* Modern and clean user interfaces
-* Structuring a frontend project for maintainability
-
-The website presents terrariums as products and provides users with a simple shopping experience, including product browsing, quick product views, adding items to a shopping cart, and a checkout interface.
-
-> **Note:** This is a frontend-only project. It does not currently process real payments, store orders, or communicate with a production backend.
+🔗 **Repository:** https://github.com/willvviana/elevvo-frontend
 
 ---
 
-## ✨ Features
+## 📌 About
 
-### 🏠 Home
+This repository contains multiple frontend projects developed during my internship at **Elevvo**.
 
-The landing section introduces the Terrarium brand and its products with a clear call-to-action.
+Instead of treating the tasks as isolated exercises, the projects were used to practice the complete frontend development workflow:
 
-### 🌱 Product Catalog
+* Understanding requirements
+* Structuring web pages
+* Implementing user interfaces
+* Writing reusable and maintainable CSS
+* Adding JavaScript functionality
+* Handling user interactions
+* Building responsive layouts
+* Testing functionality in the browser
+* Using Git for version control
+* Deploying frontend applications
 
-The product section displays different terrarium products, including:
+The repository currently contains **five tasks**, organized into separate directories:
 
-* Forest Ecosystem Terrarium
-* Desert Oasis Terrarium
-* Tropical Paradise Terrarium
-* Zen Garden Terrarium
+```text
+elevvo-frontend/
+│
+├── task-1/
+├── task-2/
+├── task-3/
+├── task-4/
+├── task-5/
+│
+├── index.html
+├── styles.css
+└── README.md
+```
 
-Each product includes:
+---
 
-* Product image
-* Product name
-* Description
-* Price
-* Quick View action
-* Add to Cart action
+## 🗂️ Project Tasks
 
-### 🛒 Shopping Cart
+### Task 1
 
-The interface includes a shopping cart experience where users can:
+The first task focuses on establishing fundamental frontend development practices and translating a project requirement into a functional web interface.
 
-* Add products to the cart
-* View selected products
-* Review the cart total
-* Remove items
-* Proceed toward checkout
+Key areas practiced:
 
-### 📖 About Section
+* HTML structure
+* CSS styling
+* Page layout
+* User interface organization
+* Responsive behavior
 
-Provides information about the fictional Terrarium business, including its story, focus, and key business statistics.
+---
 
-### 📩 Contact Section
+### Task 2
 
-A contact interface allows users to provide:
+The second project builds on the fundamentals from Task 1 and introduces additional frontend interactions and UI behavior.
 
-* Name
-* Email
-* Subject
-* Message
+Key areas practiced:
 
-### 📱 Responsive Design
+* Interactive UI elements
+* JavaScript fundamentals
+* Event handling
+* DOM manipulation
+* Responsive styling
 
-The layout is designed to adapt to different screen sizes, providing a usable experience across desktop and mobile devices.
+---
+
+### Task 3
+
+The third task focuses on creating a more structured frontend experience and improving the organization of the application's interface.
+
+Key areas practiced:
+
+* Component-like UI organization
+* Dynamic browser interactions
+* Form and input handling
+* CSS layout techniques
+* User experience considerations
+
+---
+
+### Task 4
+
+The fourth project continues the progression toward more functional frontend applications.
+
+The focus is on combining structure, styling, and JavaScript logic into a cohesive user experience.
+
+Key areas practiced:
+
+* JavaScript application logic
+* State-like UI updates
+* User interactions
+* Input handling
+* Responsive layouts
+* Code organization
+
+---
+
+### Task 5
+
+The fifth task represents the latest stage of the frontend work currently included in this repository.
+
+The project combines the concepts developed throughout the previous tasks and provides additional practice with building functional and responsive browser-based interfaces.
+
+Key areas practiced include:
+
+* Frontend architecture
+* Interactive functionality
+* JavaScript logic
+* Responsive design
+* UI/UX implementation
+* Code organization
 
 ---
 
 ## 🛠️ Technologies
 
-* HTML5
-* CSS3
-* JavaScript
-* Git
-* GitHub
-* GitHub Pages
+The projects in this repository primarily use:
+
+* **HTML5** — semantic page structure
+* **CSS3** — styling, layouts, and responsive design
+* **JavaScript** — application logic and user interactions
+* **Git** — version control
+* **GitHub** — source code management
+* **GitHub Pages** — frontend deployment
+
+The projects intentionally focus on core frontend technologies to strengthen understanding of the fundamentals before moving toward larger frameworks and full-stack architectures.
 
 ---
 
-## 🧠 What I Learned
+## 🎯 Learning Objectives
 
-This project helped reinforce several important frontend development concepts.
+The main objective of this repository is to develop practical frontend engineering skills through progressively more complex tasks.
+
+Throughout the projects, I have worked on:
 
 ### HTML
 
-* Semantic page structure
-* Forms and input elements
+* Semantic HTML
+* Page structure
+* Forms
+* Inputs
 * Navigation
-* Accessibility fundamentals
-* Organizing content into reusable sections
+* Content organization
 
 ### CSS
 
+* Flexbox
+* CSS Grid
 * Responsive layouts
-* Flexbox and Grid
-* Spacing and typography
-* Product card layouts
-* Responsive navigation
-* Styling interactive elements
-* Building a consistent visual hierarchy
+* Typography
+* Spacing
+* Positioning
+* Component styling
+* Mobile-friendly interfaces
 
 ### JavaScript
 
+* Variables and data structures
+* Functions
 * DOM manipulation
-* Event handling
-* Managing application state
-* Shopping cart logic
-* Updating UI dynamically
-* Handling user interactions
+* Event listeners
+* User input
+* Conditional logic
+* Dynamic UI updates
+* Client-side application behavior
+
+### Development Workflow
+
+* Git version control
+* Repository organization
+* Incremental development
+* Debugging
+* Browser testing
+* Deployment with GitHub Pages
 
 ---
 
-## 🏗️ Project Structure
+## 📁 Repository Structure
 
 ```text
-terrarium-frontend/
+elevvo-frontend/
 │
-├── index.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-├── images/
+├── task-1/
 │   └── ...
 │
+├── task-2/
+│   └── ...
+│
+├── task-3/
+│   └── ...
+│
+├── task-4/
+│   └── ...
+│
+├── task-5/
+│   └── ...
+│
+├── index.html
+├── styles.css
+├── .gitignore
 └── README.md
 ```
 
-The project keeps the main frontend concerns separated into HTML, CSS, and JavaScript to make the code easier to understand and maintain.
+Each task is kept in its own directory to make the individual projects easier to understand, test, and maintain.
 
 ---
 
-## 🛒 Current Scope
+## 🚀 Running the Projects Locally
 
-The current version focuses specifically on the **frontend experience**.
+Because the projects are frontend applications, they do not require a backend server or database to run.
 
-### Implemented
-
-* Landing page
-* Product catalog
-* Product cards
-* Quick View interface
-* Shopping cart UI
-* Add/remove cart interactions
-* Cart total calculation
-* Contact form UI
-* Responsive layout
-* GitHub Pages deployment
-
-### Not Implemented Yet
-
-* Backend API
-* Database
-* User authentication
-* Persistent shopping carts
-* Real checkout
-* Payment processing
-* Order management
-* Production contact form submission
-
-These features would require a backend and persistent data layer.
-
----
-
-## 🚀 Running the Project Locally
-
-Clone the repository:
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/willvviana/terrarium-frontend.git
+git clone https://github.com/willvviana/elevvo-frontend.git
 ```
 
-Navigate into the project:
+### 2. Navigate into the repository
 
 ```bash
-cd terrarium-frontend
+cd elevvo-frontend
 ```
 
-Because this is a static frontend project, there are no backend dependencies required.
+### 3. Open the project
 
-You can open `index.html` directly in a browser or use a development server such as the **Live Server** extension in Visual Studio Code.
+You can open the relevant `index.html` file directly in a browser.
+
+Alternatively, using **Visual Studio Code**, the project can be opened with a local development server such as the **Live Server** extension.
 
 ---
 
 ## 🌐 Deployment
 
-The project is deployed using **GitHub Pages**.
+The repository is deployed using **GitHub Pages**.
 
-Every update pushed to the repository can be published through the GitHub Pages deployment configuration.
+The published version can be accessed here:
 
-**Live website:**
+**https://willvviana.github.io/elevvo-frontend/**
 
-https://willvviana.github.io/terrarium-frontend/
-
----
-
-## 🔮 Future Improvements
-
-Possible future improvements include:
-
-* Connect the frontend to a REST API
-* Add a PostgreSQL database
-* Implement user authentication
-* Persist shopping carts
-* Create a real checkout flow
-* Integrate a payment provider
-* Add product filtering and sorting
-* Add product categories
-* Add product detail pages
-* Add automated tests
-* Improve accessibility
-* Add stronger form validation
-* Deploy the frontend and backend independently
+GitHub Pages provides a simple way to deploy the static frontend projects directly from the GitHub repository.
 
 ---
 
-## 🎯 Project Goal
+## 🧪 Testing
 
-The main goal of this project was to build a functional frontend application rather than a purely visual website.
+The projects are primarily tested through browser-based testing.
 
-It focuses on understanding how a real e-commerce interface is structured and how frontend code manages user interactions, application state, and dynamic UI updates.
+Testing includes:
 
-The project can also serve as a foundation for a future full-stack version with a REST API, database, authentication, and real checkout functionality.
+* Verifying page rendering
+* Testing navigation
+* Testing interactive elements
+* Checking form behavior
+* Testing different viewport sizes
+* Checking JavaScript functionality
+* Identifying and fixing browser console errors
+
+Future iterations can introduce automated unit and end-to-end testing.
+
+---
+
+## 🧠 Engineering Approach
+
+The projects follow a progressive learning approach.
+
+Rather than relying immediately on frameworks or external libraries, the initial tasks focus on understanding the underlying technologies that power modern web applications.
+
+The development process generally follows:
+
+```text
+Requirements
+     ↓
+Page Structure
+     ↓
+HTML
+     ↓
+CSS / Responsive Layout
+     ↓
+JavaScript
+     ↓
+User Interaction
+     ↓
+Browser Testing
+     ↓
+Debugging
+     ↓
+Deployment
+```
+
+This approach helps establish a stronger understanding of frontend fundamentals before introducing more complex frameworks and architectures.
+
+---
+
+## 🔍 What This Repository Demonstrates
+
+From a software engineering perspective, this repository demonstrates experience with:
+
+* Translating requirements into frontend implementations
+* Building responsive web interfaces
+* Implementing client-side functionality
+* Working with the DOM
+* Handling user interactions
+* Organizing frontend code
+* Debugging browser applications
+* Using Git and GitHub
+* Deploying static web applications
+* Iteratively improving frontend projects
+
+---
+
+## 🚧 Future Improvements
+
+Potential improvements to this repository include:
+
+* Refactoring repeated CSS and JavaScript
+* Adding automated tests
+* Improving accessibility
+* Improving semantic HTML
+* Introducing reusable components
+* Adding stronger form validation
+* Improving error handling
+* Migrating selected projects to TypeScript
+* Rebuilding selected projects with React
+* Connecting frontend applications to REST APIs
+* Adding backend services where appropriate
+* Containerizing larger applications with Docker
+
+These improvements would allow the projects to evolve from frontend exercises into more complete full-stack applications.
+
+---
+
+## 📚 Internship Context
+
+These projects were developed as part of my **Full-Stack Engineer Internship at Elevvo**, where I have been developing practical experience across:
+
+* Frontend Engineering
+* Backend Engineering
+* Machine Learning
+* Data Analytics
+
+The frontend projects in this repository represent part of that broader learning and development process.
 
 ---
 
@@ -245,7 +357,9 @@ The project can also serve as a foundation for a future full-stack version with 
 
 **Will Viana**
 
-Software Engineering student and Full-Stack Engineer Intern focused on building web applications and developing skills across frontend, backend, and machine learning.
+Software Engineering student and Full-Stack Engineer Intern focused on building web applications and developing practical experience across frontend, backend, machine learning, and data analytics.
+
+### Connect
 
 * GitHub: [@willvviana](https://github.com/willvviana)
 * Portfolio: https://willviana-portfolio.vercel.app/
@@ -254,4 +368,4 @@ Software Engineering student and Full-Stack Engineer Intern focused on building 
 
 ## 📄 License
 
-This project was created for educational and portfolio purposes.
+This repository contains projects developed for educational, professional development, and portfolio purposes.
